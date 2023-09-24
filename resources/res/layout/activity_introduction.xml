@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/activity_introduction" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout style="@style/title_layout">
+        <TextView android:id="@+id/ivClose" android:text="@string/back" style="@style/title_left_text"/>
+        <TextView android:id="@+id/tvTitle" android:text="@string/create_user" style="@style/title_text"/>
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView android:id="@+id/ssivIntroduction" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </ScrollView>
+</LinearLayout>

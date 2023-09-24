@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/bg_white_radius" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+    <TextView android:textColor="#959595" android:gravity="center_vertical" android:id="@+id/tvTitle" android:background="@drawable/text_title_bluetooth_device_list" android:paddingLeft="20dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/birthday"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.huanghuang.kangshangyiliao.view.wheel.LoopView android:layout_gravity="center_horizontal" android:id="@+id/lvYear" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <com.huanghuang.kangshangyiliao.view.wheel.LoopView android:layout_gravity="center_horizontal" android:id="@+id/lvMonth" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <com.huanghuang.kangshangyiliao.view.wheel.LoopView android:layout_gravity="center_horizontal" android:id="@+id/lvDay" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <TextView style="@style/line"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btCancel" android:background="@drawable/bg_dialog_button_left" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="@string/cancel" android:layout_weight="1"/>
+        <TextView android:background="#edf1f5" android:layout_width="1dp" android:layout_height="match_parent"/>
+        <Button android:textColor="#2ea8fe" android:id="@+id/btConfirm" android:background="@drawable/bg_dialog_button_right" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:text="@string/confirm" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/activity_printer" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="45dp">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginRight="11dp" android:src="@drawable/img_my_fh" android:layout_centerVertical="true"/>
+            <TextView android:id="@+id/ivClose" android:text="@string/back" style="@style/title_left_text"/>
+        </RelativeLayout>
+        <TextView android:textSize="18sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scanning" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <Button android:id="@+id/btPrinter" android:layout_width="match_parent" android:layout_height="50dp" android:text="连接打印机" android:layout_weight="1"/>
+    <Button android:id="@+id/btPrinter_sta" android:layout_width="match_parent" android:layout_height="50dp" android:text="开始打印" android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/activity_urinalysis_operate" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout style="@style/title_layout">
+        <TextView android:id="@+id/ivClose" android:text="@string/back" style="@style/title_left_text"/>
+        <TextView android:id="@+id/tvTitle" android:text="@string/basic_measurement" style="@style/title_text"/>
+        <Button android:textColor="#ffffff" android:layout_gravity="center" android:id="@+id/btSwitch_Urinalysis" android:background="#00000000" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/switching_equipment" android:layout_centerVertical="true" android:layout_marginEnd="5dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/btHand" android:clickable="true" android:text="@string/hand_shake" android:textAllCaps="false" style="@style/button_analyze_operate"/>
+            <Button android:id="@+id/btQuery" android:clickable="true" android:text="@string/query" android:textAllCaps="false" style="@style/button_analyze_operate"/>
+            <Button android:id="@+id/btTimeSynchronization" android:clickable="true" android:text="@string/time_synchronization" android:textAllCaps="false" style="@style/button_analyze_operate"/>
+        </LinearLayout>
+        <include layout="@layout/include_urinalysis_result"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center" android:background="#fae8c8" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/urinalysis_tip"/>
+    <LinearLayout android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/project" style="@style/operate_result_text"/>
+        <TextView android:text="@string/result" android:layout_weight="1" style="@style/operate_result_text"/>
+        <TextView android:text="@string/unit" android:layout_weight="1" style="@style/operate_result_text"/>
+        <TextView android:text="@string/reference_range" style="@style/operate_result_text"/>
+    </LinearLayout>
+    <ScrollView android:id="@+id/svAnalyzeResult" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/crp" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvCRP" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:id="@+id/tvCRP_unit" android:text="@string/crp_unit" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:id="@+id/tvCRP_Scope" android:text="@string/crp_reference_range" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/saa" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvSAA" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:id="@+id/tvSAA_unit" android:text="@string/crp_unit" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:id="@+id/tvSAA_Scope" android:text="@string/saa_reference_range" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/pct" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvPCT" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:id="@+id/tvPCT_unit" android:text="@string/pct_unit" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:id="@+id/tvPCT_Scope" android:text="@string/pct_reference_range" style="@style/operate_result_text"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

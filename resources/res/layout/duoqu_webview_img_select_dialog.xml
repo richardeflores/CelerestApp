@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#f8f8f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="23dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_blue_tstb" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="16dp" android:textColor="#333333" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="25dp" android:layout_marginRight="12dp" android:text="@string/management_trying_to_trun_on"/>
+    <LinearLayout style="@style/ask_dialog_button_layout">
+        <Button android:id="@+id/Button_BlueTooth_Refuse" android:text="@string/refuse" style="@style/ask_dialog_button"/>
+        <Button android:textColor="#666666" android:id="@+id/Button_BlueTooth_allow" android:layout_marginLeft="15dp" android:text="@string/allow" style="@style/ask_dialog_button"/>
+    </LinearLayout>
+</LinearLayout>

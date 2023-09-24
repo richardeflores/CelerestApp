@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/activity_urinalysis_result_detail" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <TextView android:textSize="18sp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="left" android:id="@+id/tvNickName" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="14" android:layout_weight="1"/>
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="18sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="WBC:"/>
+            <TextView android:textSize="20sp" android:textColor="#ffff00" android:id="@+id/tvWBC2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="5.2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:layout_marginBottom="5dp">
+        <TextView android:textColor="#ffffff" android:gravity="left" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/hematology_analyzer" android:layout_weight="1"/>
+        <TextView android:textColor="#ffffff" android:gravity="right" android:id="@+id/tvDate" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+    <include layout="@layout/include_poct_result"/>
+</LinearLayout>

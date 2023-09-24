@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center" android:background="#fae8c8" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/urinalysis_tip"/>
+    <LinearLayout android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/project" style="@style/operate_result_text"/>
+        <TextView android:text="@string/result" android:layout_weight="1" style="@style/operate_result_text"/>
+        <TextView android:text="@string/unit" android:layout_weight="1" style="@style/operate_result_text"/>
+        <TextView android:text="@string/reference_range" style="@style/operate_result_text"/>
+    </LinearLayout>
+    <ScrollView android:id="@+id/svAnalyzeResult" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/leu" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvLEU" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/cell_μl" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/negative" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:background="#e5f6ff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/nit" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvNIT" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/negative" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/ubg" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvUBG" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/μ_mol_l" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/negative" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:background="#e5f6ff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/pro" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvPRO" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/g_l" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/negative" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/ph" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvPH" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/ph_reference_range" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:background="#e5f6ff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/bld" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvBLD" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/cell_μl" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/negative" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/sg" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvSG" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/sg_reference_range" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:background="#e5f6ff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/ket" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvKET" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/m_mol_l" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/negative" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/bil" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvBIL" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/μ_mol_l" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/negative" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:background="#e5f6ff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/glu" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvGLU" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/m_mol_l" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/negative" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/vc" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvVC" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/m_mol_l" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/negative" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:background="#e5f6ff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/ca" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvCA" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/m_mol_l" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/negative" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/ma" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvMA" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/m_mol_l" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/negative" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:background="#e5f6ff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/cre" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvCRE" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/m_mol_l" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/negative" style="@style/operate_result_text"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

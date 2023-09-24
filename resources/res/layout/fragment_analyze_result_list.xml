@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rlTitle" style="@style/title_layout">
+        <TextView android:textSize="18sp" android:textStyle="bold" android:id="@+id/tvTitle" android:text="@string/test_report" style="@style/title_text"/>
+        <ImageView android:id="@+id/ivChangeAnalyzeResultType" android:clickable="true" android:layout_width="35dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/img_report_sbqh" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/rlTitle" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/llTrendChart" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:layout_weight="1">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="30dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp">
+                <RelativeLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView12" android:background="@drawable/trend_chart_round_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/trendChart_text" android:id="@+id/tvNormal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/trend_wbc_chart_normal" android:layout_centerVertical="true" android:layout_toEndOf="@+id/imageView12"/>
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:id="@+id/rlLow" android:visibility="visible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView13" android:background="@drawable/trend_chart_round_low" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/trendChart_text" android:id="@+id/tvLow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/trend_wbc_chart_low" android:layout_centerVertical="true" android:layout_toEndOf="@+id/imageView13"/>
+                </RelativeLayout>
+                <RelativeLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <ImageView android:id="@+id/imageView14" android:background="@drawable/trend_chart_round_high" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true"/>
+                    <TextView android:textSize="14sp" android:textColor="@color/trendChart_text" android:id="@+id/tvHigh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/trend_wbc_chart_high" android:layout_centerVertical="true" android:layout_toEndOf="@+id/imageView14"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <com.huanghuang.kangshangyiliao.view.wheel.TrendChartView android:id="@+id/pocttrendChartView" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        </LinearLayout>
+        <ListView android:id="@+id/lvAnalyzeResult" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/llTrendChart" android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+    <android.support.p003v7.widget.CardView android:id="@+id/cvDelete" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25dp" android:layout_marginBottom="50dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:background="#1e98d8" android:layout_width="100dp" android:layout_height="wrap_content">
+            <TextView android:textColor="#ffffff" android:gravity="center" android:id="@+id/tvDeleteResult" android:clickable="true" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/delete_result"/>
+            <TextView android:background="#1489cb" style="@style/line"/>
+            <TextView android:textColor="#ffffff" android:gravity="center" android:id="@+id/tvExit" android:clickable="true" android:layout_width="match_parent" android:layout_height="50dp" android:text="@string/cancel"/>
+        </LinearLayout>
+    </android.support.p003v7.widget.CardView>
+</RelativeLayout>

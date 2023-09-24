@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="112dp">
+        <ImageView android:id="@+id/ImageView_My_TouXiang" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="13dp" android:src="@drawable/img_my_nctx" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ImageView_My_TouXiang" android:layout_centerVertical="true">
+            <HorizontalScrollView android:scrollbars="none" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="18sp" android:textColor="#ffffff" android:id="@+id/tvClinicName" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </HorizontalScrollView>
+            <TextView android:textSize="16sp" android:textColor="#ffffff" android:id="@+id/tvDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="2017年9月15日 8:43"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/leukocyte_analyzer_connected_state"/>
+                <TextView android:textSize="12sp" android:textColor="#fff000" android:id="@+id/tvPOCTDeviceName" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/not_connected"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/urine_analyzer_connection_state"/>
+                <TextView android:textSize="12sp" android:textColor="#fff000" android:id="@+id/tvUrinalysDeviceName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/not_connected"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/ivNickNameOperate" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:src="@drawable/img_my_gd" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ScrollView android:background="#ebebeb" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:id="@+id/llCreateClinicName" android:layout_marginTop="10dp" style="@style/my_fragment_item_ll">
+                <ImageView android:src="@drawable/ico_create_nick_name" style="@style/my_fragment_item_iv"/>
+                <TextView android:text="@string/clinic_name" style="@style/my_fragment_item_tv"/>
+                <ImageView android:src="@drawable/img_nickname_jt" style="@style/my_fragment_item_iv"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/llCreateNickName" android:layout_marginTop="10dp" style="@style/my_fragment_item_ll">
+                <ImageView android:src="@drawable/ico_create_nick_name" style="@style/my_fragment_item_iv"/>
+                <TextView android:text="@string/create_user" style="@style/my_fragment_item_tv"/>
+                <ImageView android:src="@drawable/img_nickname_jt" style="@style/my_fragment_item_iv"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/llNYFX" android:clickable="true" android:layout_marginTop="10dp" style="@style/my_fragment_item_ll">
+                <ImageView android:src="@drawable/ico_nyfx" style="@style/my_fragment_item_iv"/>
+                <TextView android:text="@string/introduce_nyfxy" style="@style/my_fragment_item_tv"/>
+                <ImageView android:src="@drawable/img_nickname_jt" style="@style/my_fragment_item_iv"/>
+            </LinearLayout>
+            <LinearLayout style="@style/my_fragment_item_line_ll">
+                <TextView style="@style/line"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/llXYFX" android:clickable="true" style="@style/my_fragment_item_ll">
+                <ImageView android:src="@drawable/ico_xyfx" style="@style/my_fragment_item_iv"/>
+                <TextView android:text="@string/introduce_xxbfxy" style="@style/my_fragment_item_tv"/>
+                <ImageView android:src="@drawable/img_nickname_jt" style="@style/my_fragment_item_iv"/>
+            </LinearLayout>
+            <LinearLayout style="@style/my_fragment_item_line_ll">
+                <TextView style="@style/line"/>
+            </LinearLayout>
+            <LinearLayout style="@style/my_fragment_item_ll">
+                <ImageView android:src="@drawable/ico_myyg" style="@style/my_fragment_item_iv"/>
+                <TextView android:text="@string/introduce_myyg" style="@style/my_fragment_item_tv"/>
+                <ImageView android:src="@drawable/img_nickname_jt" style="@style/my_fragment_item_iv"/>
+            </LinearLayout>
+            <LinearLayout style="@style/my_fragment_item_line_ll">
+                <TextView style="@style/line"/>
+            </LinearLayout>
+            <LinearLayout style="@style/my_fragment_item_ll">
+                <ImageView android:src="@drawable/ico_tddb" style="@style/my_fragment_item_iv"/>
+                <TextView android:text="@string/introduce_tddb" style="@style/my_fragment_item_tv"/>
+                <ImageView android:src="@drawable/img_nickname_jt" style="@style/my_fragment_item_iv"/>
+            </LinearLayout>
+            <LinearLayout style="@style/my_fragment_item_line_ll">
+                <TextView style="@style/line"/>
+            </LinearLayout>
+            <LinearLayout android:visibility="gone" style="@style/my_fragment_item_ll">
+                <ImageView android:src="@drawable/ico_xzbzw" style="@style/my_fragment_item_iv"/>
+                <TextView android:text="@string/introduce_xzbzw" style="@style/my_fragment_item_tv"/>
+                <ImageView android:src="@drawable/img_nickname_jt" style="@style/my_fragment_item_iv"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/rlAboutUs" android:visibility="visible" android:clickable="true" android:layout_marginTop="10dp" style="@style/my_fragment_item_ll">
+                <ImageView android:src="@drawable/img_my_gywm" style="@style/my_fragment_item_iv"/>
+                <TextView android:text="@string/about_us" style="@style/my_fragment_item_tv"/>
+                <ImageView android:src="@drawable/img_nickname_jt" style="@style/my_fragment_item_iv"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/rlAboutAPP" android:visibility="visible" android:clickable="true" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" style="@style/my_fragment_item_ll">
+                <ImageView android:src="@drawable/ico_gyjyzs" style="@style/my_fragment_item_iv"/>
+                <TextView android:text="@string/about_app" style="@style/my_fragment_item_tv"/>
+                <ImageView android:src="@drawable/img_nickname_jt" style="@style/my_fragment_item_iv"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

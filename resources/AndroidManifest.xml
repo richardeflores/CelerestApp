@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="114" android:versionName="1.1.4" package="com.huanghuang.kangshangyiliao">
+    <uses-sdk android:minSdkVersion="19" android:targetSdkVersion="26"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application android:theme="@style/AppTheme" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:name="com.huanghuang.kangshangyiliao.base.KangShangApplication" android:allowBackup="true" android:largeHeap="true" android:supportsRtl="true">
+        <activity android:theme="@style/AppWelcome" android:name="com.huanghuang.kangshangyiliao.activity.SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.activity.MainActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.activity.SetNickNameActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.activity.ReportActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.activity.AboutActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.activity.UrinalysisResultDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.activity.UrinalysisMainActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.activity.POCTMainActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.activity.POCTResultDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.activity.UserInfoActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.activity.ClinicActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.activity.IntroductionActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.activity.AboutAppActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.activity.ProteinMainActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.activity.ProteinResultDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.dayiji.PrinterActivity" android:screenOrientation="portrait"/>
+        <service android:name="com.huanghuang.kangshangyiliao.dayiji.BluetoothPrintService" android:exported="false"/>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.activity.BloodFatMainActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.activity.BloodFatResultDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.activity.ImmunofluorescenceMainActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.activity.ImmunefluResultDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:theme="@style/AppTheme.Blue" android:name="com.huanghuang.kangshangyiliao.activity.ClinicActivityInfo" android:screenOrientation="portrait"/>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <activity android:theme="@style/Theme.AppCompat.NoActionBar" android:name="com.yzq.zxinglibrary.android.CaptureActivity" android:screenOrientation="portrait" android:configChanges="orientation|screenSize" android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+    </application>
+</manifest>

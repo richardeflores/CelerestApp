@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/rl_content" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/FrameLayout_Content" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1"/>
+        <View android:background="#d6d6d6" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <RadioGroup android:orientation="horizontal" android:id="@+id/RadioGroup_Report" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/rbAnalyze" android:text="@string/analyze" android:drawableTop="@drawable/tab_analyze_select" style="@style/tab"/>
+            <RadioButton android:id="@+id/RadioButton_Report" android:text="@string/report" android:drawableTop="@drawable/tab_report_select" style="@style/tab"/>
+            <RadioButton android:id="@+id/RadioButton_My" android:text="@string/my" android:drawableTop="@drawable/tab_my_select" style="@style/tab"/>
+        </RadioGroup>
+    </LinearLayout>
+</RelativeLayout>

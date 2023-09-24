@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/activity_set_nick_name" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout style="@style/title_layout">
+        <ImageView android:id="@+id/ivClose" android:src="@drawable/img_my_fh" style="@style/title_left_img"/>
+        <TextView android:text="@string/set_nickname" style="@style/title_text"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlDefaultNickName" android:background="#ffffff" android:paddingLeft="12dp" android:paddingRight="12dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="20dp">
+            <TextView android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_nickname" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/ImageView_SetNick_SanJiao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_nickname_jt" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textColor="#666666" android:id="@+id/tvDefaultNickName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:text="健康520" android:layout_toLeftOf="@+id/ImageView_SetNick_SanJiao" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="#ffffff" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/create_nickname" android:layout_centerVertical="true"/>
+                <com.zcw.togglebutton.ToggleButton android:id="@+id/tbManual" android:layout_width="65dp" android:layout_height="27dp" android:layout_alignParentRight="true" app:tbAsDefaultOn="false"/>
+            </RelativeLayout>
+            <EditText android:enabled="false" android:id="@+id/etNickName" android:background="@drawable/edittext_nickname_backgroud" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="20dp" android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="90dp" android:layout_alignParentBottom="true">
+            <View android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentTop="true"/>
+            <Button android:textColor="#ffffff" android:id="@+id/btConfirm" android:background="@drawable/button_nickname_confirm" android:clickable="true" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/confirm" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

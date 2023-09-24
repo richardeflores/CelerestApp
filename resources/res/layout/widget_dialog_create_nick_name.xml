@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#f8f8f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="30dp" android:paddingRight="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="30dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/img_create_nick_name"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+            <TextView android:textSize="22sp" android:textColor="#00aaff" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/please_create_nick_name"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/create_nick_name_tip"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout style="@style/ask_dialog_button_layout">
+        <Button android:id="@+id/btConfirm" android:clickable="true" android:text="@string/create_nick_name" style="@style/ask_dialog_button"/>
+        <Button android:id="@+id/btCancel" android:clickable="true" android:layout_marginLeft="15dp" android:text="@string/cancel" style="@style/ask_dialog_button"/>
+    </LinearLayout>
+</LinearLayout>

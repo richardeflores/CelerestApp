@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/activity_blood_fat_operate" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout style="@style/title_layout">
+        <TextView android:id="@+id/ivClose" android:text="@string/back" style="@style/title_left_text"/>
+        <TextView android:id="@+id/tvTitle" android:text="@string/basic_measurement" style="@style/title_text"/>
+        <Button android:textColor="#ffffff" android:layout_gravity="center" android:id="@+id/btSwitch_BloodFat" android:background="#00000000" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/switching_equipment" android:layout_centerVertical="true" android:textAllCaps="false" android:layout_marginEnd="5dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ffffff" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/button_text_analyze_operate" android:gravity="center_vertical" android:id="@+id/tv_device_name" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/current_device_name" android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ffffff" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btHand" android:clickable="true" android:text="@string/hand_shake" android:textAllCaps="false" style="@style/button_analyze_operate"/>
+        <Button android:id="@+id/btMeasurement" android:clickable="true" android:text="@string/measurement" android:textAllCaps="false" style="@style/button_analyze_operate"/>
+        <Button android:id="@+id/btTimeSynchronization" android:clickable="true" android:text="@string/time_synchronization" android:textAllCaps="false" style="@style/button_analyze_operate"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ffffff" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/bt_set_unit" android:clickable="true" android:text="@string/set_unit" android:textAllCaps="false" style="@style/button_analyze_operate"/>
+        <Button android:id="@+id/bt_set_unit02" android:clickable="true" android:text="@string/set_unit02" android:textAllCaps="false" style="@style/button_analyze_operate"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ffffff" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btBloodFatSetPrintTitle" android:clickable="true" android:text="@string/set_title" android:textAllCaps="false" style="@style/button_analyze_operate"/>
+        <Button android:id="@+id/btBloodFatSetPatientInfo" android:clickable="true" android:text="@string/set_patient" android:textAllCaps="false" style="@style/button_analyze_operate"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/llSend" android:paddingLeft="10dp" android:paddingRight="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/btSend" android:clickable="true" android:text="@string/send" style="@style/button_analyze_operate"/>
+            <EditText android:id="@+id/etSend" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="测量值" android:ems="10" android:inputType="number" android:layout_marginStart="14dp"/>
+        </LinearLayout>
+        <android.support.p000v4.view.ViewPager android:id="@+id/viewpager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </LinearLayout>
+</LinearLayout>

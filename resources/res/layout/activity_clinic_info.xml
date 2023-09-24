@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/activity_clinic_info" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout style="@style/title_layout">
+        <TextView android:id="@+id/ivClose" android:text="@string/back" style="@style/title_left_text"/>
+        <TextView android:id="@+id/tvTitle" android:text="@string/create_user2" style="@style/title_text"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="2">
+        <LinearLayout style="@style/user_info_activity_item_ll">
+            <LinearLayout android:orientation="horizontal" style="@style/user_info_activity_item_label">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/clinic_name"/>
+                <TextView android:textColor="#ff8833" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*"/>
+            </LinearLayout>
+            <EditText android:id="@+id/etClinicName" style="@style/user_info_activity_item_et"/>
+        </LinearLayout>
+        <TextView style="@style/line"/>
+        <LinearLayout style="@style/user_info_activity_item_ll">
+            <LinearLayout android:orientation="horizontal" style="@style/user_info_activity_item_label">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/docntorname"/>
+                <TextView android:textColor="#ff8833" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*"/>
+            </LinearLayout>
+            <EditText android:id="@+id/etDoctorName" style="@style/user_info_activity_item_et"/>
+        </LinearLayout>
+        <TextView style="@style/line"/>
+        <LinearLayout android:id="@+id/llSex" android:background="@drawable/item_white" android:clickable="true" style="@style/user_info_activity_item_ll">
+            <LinearLayout android:orientation="horizontal" style="@style/user_info_activity_item_label">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sex"/>
+                <TextView android:textColor="#ff8833" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="*"/>
+            </LinearLayout>
+            <EditText android:id="@+id/etSex" android:focusable="false" android:clickable="true" android:hint="@string/et_hint_chose" android:layout_weight="1" style="@style/user_info_activity_item_et"/>
+            <ImageView android:src="@drawable/img_nickname_jt" style="@style/my_fragment_item_iv"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="90dp">
+        <Button android:textColor="#ffffff" android:layout_gravity="center_vertical" android:id="@+id/btConfirm" android:background="@drawable/button_nickname_confirm" android:clickable="true" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/confirm"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="100dp">
+        <ImageView android:id="@+id/ImageView_Report_Item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:src="@drawable/img_report_poct" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/LinearLayout_Report_Item_Content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/ImageView_Report_Item" android:layout_centerVertical="true">
+            <TextView android:textSize="18sp" android:textColor="#333333" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="健康520"/>
+            <TextView android:textSize="16sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="poct设备1"/>
+            <TextView android:textSize="12sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="2017年9月15日 8:43"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/ImageView_Report_Item_Right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:src="@drawable/img_nickname_jt" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/ImageView_Report_Item_Right" android:layout_toRightOf="@+id/LinearLayout_Report_Item_Content" android:layout_centerVertical="true">
+            <TextView android:textSize="20sp" android:textColor="#00d93e" android:id="@+id/TextView_Report_Item_Wbc_Number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="5.2" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="16sp" android:textColor="#666666" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="WBC:" android:layout_toLeftOf="@+id/TextView_Report_Item_Wbc_Number" android:layout_alignBottom="@+id/TextView_Report_Item_Wbc_Number"/>
+            <TextView android:textSize="16sp" android:textColor="#999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10-9/L" android:layout_below="@+id/TextView_Report_Item_Wbc_Number" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

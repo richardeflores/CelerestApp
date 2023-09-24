@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/dialog_shape" android:paddingTop="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minWidth="260dp" android:layout_centerInParent="true">
+    <TextView android:textSize="18sp" android:textColor="#333333" android:gravity="center" android:layout_gravity="center" android:id="@+id/title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:layout_width="wrap_content" android:layout_height="30dp" android:text=" Id:"/>
+        <EditText android:id="@+id/et_id" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/commdialog_hint_id" android:inputType="number" android:layout_marginStart="2dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:layout_width="wrap_content" android:layout_height="30dp" android:text=" Name:"/>
+        <EditText android:gravity="center_vertical" android:id="@+id/et_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/commdialog_hint_name"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20sp" android:layout_width="wrap_content" android:layout_height="30dp" android:text=" Age:"/>
+        <EditText android:id="@+id/et_age" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/commdialog_hint_age" android:maxLines="1" android:maxLength="2" android:inputType="number"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/llBirthday" android:background="@drawable/item_white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+            <TextView android:textSize="20sp" android:id="@+id/tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/birthday" android:layout_alignParentStart="true"/>
+            <EditText android:id="@+id/etBirthday" android:focusable="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/et_hint_chose" android:maxLines="1" android:layout_toRightOf="@+id/tv"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RadioGroup android:orientation="horizontal" android:id="@+id/rg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+        <RadioButton android:id="@+id/rb_man" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/commdialog_hint_sex_man" android:layout_weight="1"/>
+        <RadioButton android:id="@+id/rb_women" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/commdialog_hint_sex_female" android:layout_weight="1"/>
+    </RadioGroup>
+    <TextView android:textSize="14dp" android:textColor="#999999" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/message" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:lineSpacingExtra="3dp" android:lineSpacingMultiplier="1.2"/>
+    <View android:background="#e4e4e4" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginTop="16dp"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:textSize="16sp" android:gravity="center" android:id="@+id/btn_cancel" android:background="@null" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true" android:layout_weight="1"/>
+        <View android:id="@+id/column_line" android:background="#e4e4e4" android:layout_width="1px" android:layout_height="match_parent"/>
+        <Button android:textSize="16sp" android:gravity="center" android:id="@+id/btn_sure" android:background="@null" android:paddingTop="16dp" android:paddingBottom="16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

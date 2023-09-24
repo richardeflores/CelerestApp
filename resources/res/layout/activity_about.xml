@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/activity_about" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="45dp">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11dp" android:layout_marginRight="11dp" android:src="@drawable/img_my_fh" android:layout_centerVertical="true"/>
+            <TextView android:id="@+id/ivClose" android:text="@string/back" style="@style/title_left_text"/>
+        </RelativeLayout>
+        <TextView android:textSize="18sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/about_us" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/img_my_gywm_ny_all" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="18sp" android:textColor="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="312dp" android:layout_marginBottom="10dp" android:text="@string/company_profile"/>
+        <TextView android:textSize="12sp" android:textColor="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:text="@string/romotional_quotations"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="50dp" android:src="@drawable/img_about_logo"/>
+    </LinearLayout>
+</LinearLayout>

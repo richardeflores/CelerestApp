@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/activity_poct_operate" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout style="@style/title_layout">
+        <TextView android:id="@+id/ivClose" android:text="@string/back" style="@style/title_left_text"/>
+        <TextView android:id="@+id/tvTitle" android:text="@string/basic_measurement" style="@style/title_text"/>
+        <Button android:textColor="#ffffff" android:layout_gravity="center" android:id="@+id/btSwitch_Poct" android:background="#00000000" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/switching_equipment" android:layout_centerVertical="true" android:textAllCaps="false" android:layout_marginEnd="5dp" android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:background="#ffffff" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textColor="@color/button_text_analyze_operate" android:gravity="center_vertical" android:id="@+id/tv_device_name" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/current_device_name" android:layout_marginStart="10dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <HorizontalScrollView android:scrollbars="none" android:fadingEdge="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <Button android:id="@+id/btHand" android:clickable="true" android:text="@string/hand_shake" android:textAllCaps="false" style="@style/button_analyze_operate"/>
+                <Button android:id="@+id/btMeasurement" android:clickable="true" android:text="@string/measurement" android:textAllCaps="false" style="@style/button_analyze_operate"/>
+                <Button android:id="@+id/btTimeSynchronization" android:clickable="true" android:text="@string/time_synchronization" android:textAllCaps="false" style="@style/button_analyze_operate"/>
+                <Button android:id="@+id/btSetPrintTitle" android:clickable="true" android:text="@string/set_title" android:textAllCaps="false" style="@style/button_analyze_operate"/>
+                <Button android:id="@+id/btSetPatientInfo" android:clickable="true" android:text="@string/set_patient" android:textAllCaps="false" style="@style/button_analyze_operate"/>
+                <Button android:id="@+id/btScan" android:visibility="gone" android:clickable="true" android:text="@string/set_scan" android:textAllCaps="false" style="@style/button_analyze_operate"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <include layout="@layout/include_poct_result"/>
+    </LinearLayout>
+</LinearLayout>

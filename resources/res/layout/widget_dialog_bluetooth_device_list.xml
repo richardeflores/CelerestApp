@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="@drawable/bg_white_radius" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="#959595" android:gravity="center_vertical" android:background="@drawable/text_title_bluetooth_device_list" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/select_equipment"/>
+    <ListView android:id="@+id/lvDevice" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="#edf1f5" android:dividerHeight="1dp" android:layout_weight="2"/>
+    <TextView android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <Button android:id="@+id/btClose" android:background="@drawable/button_close_dialog_list" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/cancel"/>
+</LinearLayout>

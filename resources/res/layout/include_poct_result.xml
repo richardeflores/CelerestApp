@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:gravity="center" android:background="#fae8c8" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/urinalysis_tip"/>
+    <LinearLayout android:background="#ebebeb" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:text="@string/project" style="@style/operate_result_text"/>
+        <TextView android:text="@string/result" android:layout_weight="1" style="@style/operate_result_text"/>
+        <TextView android:text="@string/unit" android:layout_weight="1" style="@style/operate_result_text"/>
+        <TextView android:text="@string/reference_range" style="@style/operate_result_text"/>
+    </LinearLayout>
+    <ScrollView android:id="@+id/svAnalyzeResult" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/wbc" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvWBC" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:id="@+id/tvWBC_unit" android:text="@string/wbc_unit" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:id="@+id/tvWBC_Scope" android:text="@string/wbc_reference_range" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:background="#e5f6ff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/lymp" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvLYMP" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/wbc_unit" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/lymp_reference_range" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/mon" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvMON" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/wbc_unit" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/mon_reference_range" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:background="#e5f6ff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/neut" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvNEUT" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/wbc_unit" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/neut_reference_range" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/eos" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvEOS" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/wbc_unit" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/eos_reference_range" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:background="#e5f6ff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/bas" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvBAS" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/wbc_unit" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/bas_reference_range" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/lymp_percent" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvLYMPP" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/percent" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/lymp_percent_reference_range" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:background="#e5f6ff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/mon_percent" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvMONP" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/percent" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/mon_percent_reference_range" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/neut_percent" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvNEUTP" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/percent" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/neut_percent_reference_range" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:background="#e5f6ff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/eos_percent" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvEOSP" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/percent" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/eos_percent_reference_range" style="@style/operate_result_text"/>
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:text="@string/bas_percent" style="@style/operate_result_text"/>
+                <TextView android:textColor="@color/analyzeResultValue" android:id="@+id/tvBASP" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/percent" android:layout_weight="1" style="@style/operate_result_text"/>
+                <TextView android:text="@string/bas_percent_reference_range" style="@style/operate_result_text"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="20sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tvNickName" android:padding="10dp" android:layout_width="match_parent" android:layout_height="70dp" android:maxLines="1" android:maxEms="17"/>
+</LinearLayout>

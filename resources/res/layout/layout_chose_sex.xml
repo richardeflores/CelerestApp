@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RadioGroup android:gravity="left" android:orientation="horizontal" android:id="@+id/wbcSex" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RadioButton android:textSize="20sp" android:textColor="#666666" android:id="@+id/wbcMale" android:checked="true" android:text="@string/male" android:drawableLeft="@drawable/bg_checkbox" style="@style/tab"/>
+        <TextView style="@style/line"/>
+        <RadioButton android:textSize="20sp" android:textColor="#666666" android:id="@+id/wbcFemale" android:text="@string/female" android:drawableLeft="@drawable/bg_checkbox" style="@style/tab"/>
+    </RadioGroup>
+</LinearLayout>

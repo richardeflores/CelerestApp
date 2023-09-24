@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:orientation="vertical" android:id="@+id/activity_urinalysis_result_detail" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout style="@style/title_layout">
+        <TextView android:id="@+id/ivClose" android:text="@string/back" style="@style/title_left_text"/>
+        <TextView android:text="@string/test_report_detail" style="@style/title_text"/>
+        <ImageView android:id="@+id/ivDelete" android:paddingRight="20dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_delete" android:layout_toLeftOf="@+id/ivShare" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/ivShare" android:paddingRight="15dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_jtfx" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <android.support.p000v4.view.ViewPager android:id="@+id/vpUrinalysisResultDetail" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>
